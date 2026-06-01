@@ -1,0 +1,270 @@
+/* ===============
+  Diseño de componentes
+================= */
+
+:root{
+
+    /* Colores Marca */
+    
+    --primary: #7A1F2B;
+    --secondary: #E7C9A6;
+    --tertiary: #C08081;
+
+    /* Colores superficie */
+
+    --surface: #d89f74;
+    --background: #F5E6D3;
+    
+    /* Colores de texto */
+
+    --text-primary: #000000;
+    --text-on-light: #7A1F2B;
+    --text-on-dark: #F5E6D3;
+
+    /* Acento */
+
+    --accent: #dbad72;
+
+    /* TIPOGRAFÍA */
+
+    --font-title: 'Fraunces', serif;
+    --font-body: 'Nunito', sans-serif;
+
+    --text-lg: 3rem;
+    --text-md: 1.2rem;
+    --text-sm: 1rem;
+
+    /* SPACING */
+
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 32px;
+
+    /* BORDES */
+
+    --radius-md: 16px;
+
+}
+
+
+/* ===============
+  Estilos globales
+================= */
+
+body{
+    font-family: var(--font-body);
+    background-color: var(--background);
+    color: var(--text-primary);
+
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+header{
+    background-color: var(--primary);
+    color: var(--text-on-dark);
+    padding: var(--space-lg);
+    border-radius: 0 0 64px 64px;
+}
+
+section{
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--primary);
+}
+
+h1,h2{
+    font-family: var(--font-title);
+}
+
+h1{
+    font-size: var(--text-lg);
+}
+
+p{
+    font-size: var(--text-md);
+}
+
+small{
+    font-size: var(--text-sm);
+}
+
+/* ===============
+  TIPOGRAFIA
+================= */
+
+.tipografia-fraunces{
+    font-family: var(--font-title);
+}
+
+.title-example{
+    font-family: var(--font-title);
+}
+
+.body-example{
+    font-family: var(--font-title);
+    font-size: var(--text-md);
+}
+
+.small-fraunces{
+    font-family: var(--font-title);
+    font-size: var(--text-sm);
+}
+
+.tipografia-nunito{
+    font-family: var(--font-body);
+}
+
+.title-example-nunito{
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+}
+
+/* ===============
+  Colores
+================= */
+
+.colors-marca{
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.colors-surface{
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.colors-text{
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.color-card{
+    width: 140px;
+    height: 140px;
+
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.primary{
+    background-color: var(--primary);
+    color: var(--text-on-dark);
+}
+
+.second{
+    background-color: var(--secondary);
+    color: var(--text-on-light);
+}
+
+.third{
+    background-color: var(--tertiary);
+    color: var(--text-on-dark);
+}
+
+.backgroundd{
+    background-color: var(--background);
+    color: var(--text-primary);
+    border: 1px solid;
+}
+
+.surfacee{
+    background-color: var(--surface);
+    color: var(--text-primary);
+}
+
+.text-general{
+    background-color: var(--text-primary);
+    color: var(--text-on-dark);
+}
+
+.text-white{
+    background-color: var(--text-on-light);
+    color: var(--text-on-dark);
+}
+
+.text-black{
+    background-color: var(--background);
+    color: var(--text-primary);
+    border: 1px solid;
+}
+
+.acento{
+    background-color: var(--accent);
+    color: var(--text-primary);
+}
+
+/* ===============
+  ESPACIADOS
+================= */
+
+
+
+.decision-seccion{
+    margin-top: 50px;
+    background-color: var(--tertiary);
+    color: var(--text-on-dark);
+    border-radius: 64px 64px 0 0;
+}
+
+.scalas{
+    display: flex;
+    gap:var(--space-lg);
+    align-items: end;
+}
+
+.scala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.caja1,.caja2,.caja3{
+    background-color: var(--primary);
+    height: 50px;
+}
+
+.caja1{
+    width: 8px;
+}
+
+.caja2{
+    width: 16px;
+}
+
+.caja3{
+    width: 32px;
+}
+
+/* ===============
+  BOTÓN
+================= */
+
+.btn{
+    background-color: var(--primary);
+    color:var(--text-on-dark);
+
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    font-weight: bold;
+
+    padding: var(--space-md);
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
