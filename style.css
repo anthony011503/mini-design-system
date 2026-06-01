@@ -268,3 +268,89 @@ small{
 .btn:hover {
     opacity: 0.8;
 }
+
+/* ===============
+  CARD
+================= */
+
+.carddd{
+    background-color: var(--surface);
+    padding: var(--space-lg);
+    border-radius: 16px;
+    max-width: 400px;
+}
+
+/* ===============
+  INPUT
+================= */
+
+.input{
+    padding: var(--space-md);
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+
+    border: 1px solid var(--tertiary);
+    border-radius: 16px;
+
+    width: 300px;
+}
+
+
+.input:focus{
+    outline: 2px solid var(--primary);
+}
+
+
+/* ===============
+  BADGE
+================= */
+
+.badge{
+    background-color: var(--tertiary);
+
+    color: var(--text-on-dark);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: var(--text-sm);
+    margin-right: var(--space-sm);
+}
+
+
+/* ===============
+  NAVBAR
+================= */
+
+.navbar{
+    display: flex;
+    gap: var(--space-lg);
+    background-color: var(--secondary);
+    padding: var(--space-md);
+    border-radius: 16px;
+}
+
+.navbar a{
+    color: var(--text-on-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ===============
+  AVATAR
+================= */
+
+.avatar-card{
+    background-color: var(--secondary);
+    padding: var(--space-lg);
+    border-radius: 16px;
+    border: 1px solid var(--primary);
+    max-width: 250px;
+    text-align: center;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+}
